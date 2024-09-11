@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: rgb(0, 37, 70);
+    background: linear-gradient(
+      68deg,
+      rgba(0, 37, 70, 1) 0%,
+      rgba(146, 236, 255, 1) 100%
+    );
+  }
+
+  h2 {
+    font-weight: 600;
+    color: #164e63;
+  }
+
+  label {
+    font-weight: 600;
+  }
+
+  input,select {
+    background-color: #f3f4f6;
+    border-radius: 9999px;
+    padding: 0.5rem 1rem;
+    outline: none;
+    box-shadow: 0 0 1px #164e63;
+    transition: all .2s;
+    appearance: none;
+  }
+
+  button {
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    background-color: #06b6d4;
+    color: white;
+    border-radius: 9999px;
+    transition: all .2s;
+  }
+
+  button:hover {
+    background-color: #0891b2;
+  }
+
+  span {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+}
+
+@layer components {
+  .user-card {
+    box-shadow: 0 0 2px #164e63;
+  }
+  
+  .input-error {
+    box-shadow: 0 0 3px red;
+  }
+}
